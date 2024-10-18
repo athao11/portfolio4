@@ -1,0 +1,166 @@
+#container0{
+    background-image: linear-gradient(rgb(84, 78, 78), rgb(31, 26, 26));
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-color: black;
+    box-shadow: -1vw 4vh 5vw rgb(31, 26, 26);
+    z-index: 10;
+} 
+
+
+#athao{
+    border-radius: 50vw;
+    height: 23vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 18vw;
+    margin-top: 15vh;
+    z-index: 1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    max-width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+h1{
+    color: white;
+    margin-left: 1vw;
+    margin-right: 90vw;
+    margin-top: 3vh;
+    font-size: 4vw;
+    font-stretch: ultra-expanded;
+    height: 7vh;  
+    width: 90vw;
+    font-family: fonteLogo;
+
+}
+
+h4{ 
+    color: white;
+    font-size: 4vh;
+    margin-right: 8vh;
+    margin-left: 4vw;
+    font-family: fonteLogo;
+    margin-top: 4vh;
+}
+
+.particulas {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 0vw;
+    z-index: -1;
+    position: absolute;
+    animation: animacao 40s infinite;
+}
+
+@keyframes animacao {
+    0%   { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+    12%  { transform: translate(10px, 10px); height: 0.19vw; width: 0.19vw; } 
+    25%  { transform: translate(0, -10px); height: 0.38vw; width: 0.38vw; } 
+    50%  { transform: translate(10px, -10px); height: 0.38vw; width: 0.38vw; } 
+    75%  { transform: translate(0, 30px); height: 0.22vw; width: 0.22vw; } 
+    87%  { transform: translate(10px, 10px); height: 0.17vw; width: 0.17vw; } 
+    100% { transform: translate(0, 0); height: 0.38vw; width: 0.38vw; } 
+}
+
+
+@font-face {
+    font-family: fonteLogo;
+    src: url(/fontes/Steinerlight.ttf);
+  }
+
+  a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 7vh;
+    margin-top: 5vh;
+  }
+  ul{
+    list-style: none;
+  }
+
+  #arredondado{
+    position: absolute;
+    top: -3vh;
+    border-radius: 50%;
+    border: solid;
+    border-color: black;
+    height: 115vh;
+    width: 58vw;
+    display: flex;
+    margin-left: 65vw;
+    background-image: linear-gradient(rgb(138, 130, 130), rgb(31, 26, 26));
+    box-shadow: -2vw 2vh 8vw black;
+    z-index: 9;
+  }
+
+#biografia{
+    margin-left: -20vw;
+    margin-top: 42vh;
+    color: white;
+    font-size: 4vh;
+    width: 24vw;
+    font-family: fonteBio;
+    z-index: 9;
+}
+
+@font-face {
+    font-family: fonteBio;
+    src: url(/fontes/DUBIEL.TTF);
+  }
+
+
+  #menu{
+    position: relative;
+    top: 12vh;
+
+  } 
+
+#menu li:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+   
+  
+  }
+
+
+  #menu li:hover a{
+   font-size: 8vh;
+  }
+
+
+#menu li {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#menu li:hover {
+    background-color: #302e2e;   
+    border-radius: 10px;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#menu li a {
+    transition: font-size 0.3s ease, color 1s ease;
+}
+
+#menu li:hover a {
+    font-size: 8vh;
+    color: #7f7d80; 
+}
